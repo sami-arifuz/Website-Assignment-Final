@@ -1,12 +1,12 @@
-# APP NAME
+# Cell Planet and Gift Corner Website
 
 # GitHub Repository
 The source code for this project is available on GitHub: https://github.com/xxyy
 
 ## Identification
-- **Name:** 
-- **P-number:** 
-- **Course code:** 
+- Name: Md Arifuzzaman Sami
+- P-number: P477831
+- Course code: IY499
 
 ## Declaration of Own Work
 I confirm that this assignment is my own work.
