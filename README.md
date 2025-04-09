@@ -1,12 +1,12 @@
 # Cell Planet and Gift Corner Website
 
 # GitHub Repository
-The source code for this project is available on GitHub: https://github.com/xxyy
+The source code for this project is available on GitHub: [https://github.com/xxyy](https://github.com/sami-arifuz/Website-Assignment-Final/tree/main)
 
 ## Identification
-- Name: Md Arifuzzaman Sami
-- P-number: P477831
-- Course code: IY499
+- **Name:** Md Arifuzzaman Sami
+- **P-number:** P477831
+- **Course code:** IY499
 
 ## Declaration of Own Work
 I confirm that this assignment is my own work.
