@@ -12,32 +12,11 @@ The source code for this project is available on GitHub: [https://github.com/xxy
 I confirm that this assignment is my own work.
 Where I have referred to academic sources, I have provided in-text citations and included the sources in the final reference list.
 
-## Introduction VERY IMPORTANT - EXPLAIN IN DETAIL - INCLUDE YOUR SPECIAL FEATURES HERE - MUST BE WRITTEN COMPLETELY BY STUDENT
-This code represents a simple implementation of the xx using the xx library. The game consists of xxyy
+## Introduction 
+This project is a multi-page website made for a  store called Cell Planet and Gift Corner. The main goal is to create a simple, good-looking, and easy-to-use website where people can explore different mobile accessories like AirPods, screen guards, chargers, and phone covers. The entire website is built using just HTML and CSS. It focuses on clean design, proper layout, and a smooth browsing experience. Each page is carefully made to look consistent and make it easy for users to find what they’re looking for.
 
 ## Installation
-To run the game, ensure you have Python installed, and then install the required dependencies from the `requirements.txt` file using the following command:
-```bash
-pip install -r requirements.txt
-```
-
-## How to Play
-- Press the x key to do xxyy.
-- xxyy
-
-### Running the Game
-```python
-python main.py
-```
-
-### Running Unit Tests
-```python
-python UnitTest.py
-```
-
-## Game Elements
-- xxyy 
-- xxyy 
+Since this project is a basic website built with just HTML and CSS, there’s no need to install anything to make it work. You don’t need extra tools, programs, or libraries. It’s made to run directly in any web browser. All you have to do is open the website files (like home.html) on your computer, and the website will show up. This makes it easy to share and use because it works offline and doesn’t need any setup or installations.
 
 ## Libraries Used
 The following libraries are used in this project:
@@ -48,10 +27,4 @@ The following libraries are used in this project:
 - `ErrorHandling/`: Contains classes for handling various errors.
 xxyy
 
-## Unit Tests (optional)
-The project includes xxyy
-
-To run the unit tests, navigate to the project directory and xxyy
-
-This will run all the test cases defined in the `UnitTest.py` file.
 
