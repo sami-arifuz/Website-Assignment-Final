@@ -1,74 +1,136 @@
 <!DOCTYPE html>
 <html>
-     <head>
-          <title>Cell Planet</title>
-          <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-          <link rel="stylesheet" type="text/css" href="css/contactus.css">
-          <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <head>
+        <!-- 
+            This sets the title that appears in the browser tab. 
+            It's also what shows up when someone bookmarks the site or shares it in a link preview.
+        -->
+        <title>Cell Planet</title>
+
+        <!-- 
+            Linking the main stylesheet which holds the overall look and feel for the site—
+            things like fonts, layout, colors, spacing, etc.
+        -->
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+        <!-- 
+            Linking a separate stylesheet for this specific page ("Contact Us").
+            This keeps the page's custom styles organized and separated from global styles.
+        -->
+        <link rel="stylesheet" type="text/css" href="css/contactus.css">
+
+        <!-- 
+            This adds a favicon (a tiny icon/logo) that appears next to the page title in the browser tab.
+            It’s a nice branding touch and helps the site look more professional.
+        -->
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
     </head>
+
     <body>
-         <nav>
-          
+        <!-- 
+            Navigation bar - a consistent menu across the website so users can explore different sections easily.
+            This improves user experience by making the website feel familiar and accessible.
+        -->
+        <nav>
             <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="contact us.html">Contact Us</a></li>
-            <li><a href="about us.html">About Us</a></li>
-            <li><a href="offers.html">Offers</a></li>
-          </ul>
-         </nav>
-         <section class="contact">
-          <div class="content">
-               <h2>Contact Us</h2>
-               <p>Feel free to send us your opinion and contact us if you need someting</p>
-          </div>
-          <div class="container">
-               <div class="contactInfo">
-                 <div class="box">
-                  <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                  <div class="text">
-                    <h3>Address</h3>
-                    <p>548 Barking Rd, London E13 9JU</p>
-                  </div>
-                 </div>
-                 <div class="box">
-                    <div class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
-                    <div class="text">
-                      <h3>Phone</h3>
-                      <p>+442037424419</p>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact us.html">Contact Us</a></li> <!-- This page -->
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="offers.html">Offers</a></li>
+            </ul>
+        </nav>
+
+        <!-- 
+            This section holds all the content for the Contact Us page.
+            Using a section helps with organizing the layout and is also better for SEO and screen readers.
+        -->
+        <section class="contact">
+
+            <!-- 
+                A short welcoming message to encourage visitors to reach out. 
+                Sets a friendly tone and invites communication.
+            -->
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>Feel free to send us your opinion and contact us if you need something</p>
+            </div>
+
+            <!-- 
+                This container holds both the contact information and the contact form,
+                making it easier to arrange them side-by-side or stacked depending on screen size.
+            -->
+            <div class="container">
+
+                <!-- 
+                    Left side: Contact details (address, phone, email).
+                    This provides visitors with quick access to real-world info if they prefer to reach out directly.
+                -->
+                <div class="contactInfo">
+
+                    <!-- 
+                        Each box holds one piece of contact information with an icon,
+                        making it visually clear and easy to scan.
+                    -->
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>548 Barking Rd, London E13 9JU</p>
+                        </div>
                     </div>
-                   </div>  
-                   <div class="box">
-                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                    <div class="text">
-                      <h3>Email</h3>
-                      <p>cellplanet.1@gmail.com</p>
+
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+442037424419</p>
+                        </div>
                     </div>
-                   </div>  
-               </div>
-               <div class="contactForm">
+
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>cellplanet.1@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 
+                    Right side: A simple contact form where users can send a message.
+                    Forms like this are great for gathering feedback or support requests.
+                -->
+                <div class="contactForm">
                     <form>
-                         <h2>Send Message</h2>
-                         <div class="inputBox">
-                              <input type="text" name="" required="required">
-                              <span>Full Name</span>
-                         </div>
-                         <div class="inputBox">
-                              <input type="text" name="" required="required">
-                              <span>Email</span>
-                         </div>
-                         <div class="inputBox">
-                              <textarea required="requried"></textarea>
-                              <span>Enter Your Message:</span>
-                         </div>
-                         <div class="inputBox">
-                              <input type="submit" name="" value="Send">
-                         </div>
+                        <h2>Send Message</h2>
+
+                        <!-- Input for the user's full name -->
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+
+                        <!-- Input for the user's email address -->
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+
+                        <!-- Text area for the actual message or question -->
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Enter Your Message:</span>
+                        </div>
+
+                        <!-- Submit button to send the message -->
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Send">
+                        </div>
                     </form>
-               </div> 
-          </div>
-         </section>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
-               
