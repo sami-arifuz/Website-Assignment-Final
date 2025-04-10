@@ -1,81 +1,164 @@
 <!DOCTYPE html>
 <html>
-     <head>
-          <title>Cell Planet</title>
-          <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-          <link rel="stylesheet" type="text/css" href="css/products.css">
-          <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <head>
+        <!-- 
+            This line tells the browser to interpret the document using HTML5,
+            which ensures modern features and compatibility across browsers.
+        -->
+        <title>Cell Planet</title>
+
+        <!-- 
+            Global stylesheet: contains shared styles like font families, color schemes, and layout helpers
+            that apply to all pages across the website.
+        -->
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+        <!-- 
+            Page-specific stylesheet for the Products page.
+            This one handles layout, spacing, and style for product listings.
+        -->
+        <link rel="stylesheet" type="text/css" href="css/products.css">
+
+        <!-- 
+            This sets a favicon for the tab in the browser,
+            which adds to your site's branding and visual identity.
+        -->
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
     </head>
+
     <body>
-         <nav>
+        <!-- 
+            Navigation menu allows users to quickly switch between different pages of the site.
+            Placing it at the top ensures accessibility and a better user experience.
+        -->
+        <nav>
             <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="contact us.html">Contact Us</a></li>
-            <li><a href="about us.html">About Us</a></li>
-            <li><a href="offers.html">Offers</a></li>
-          </ul>
-         </nav>
-         <div class="container">
-          <div class="header">
-               <h1>Products</h1>
-          </div>
-          <div class="products">
-            <div class="product">
-              <div class="image">
-               <img src="images/airpods.jpeg" alt="Airpods">
-              </div> 
-              <div class="namePrice">
-               <h3>AirPods</h3>
-               <span>£49.99</span>
-              </div>
-              <p>AirPods models deliver an unparalleled wireless experience, 
-               from magical setup to high-quality sound.</p>
-               <div class="buy">
-                    <button>Buy Now</button>
-               </div>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li> <!-- Current page -->
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="offers.html">Offers</a></li>
+            </ul>
+        </nav>
+
+        <!-- 
+            Main container to group all the content and keep it centered and styled nicely.
+            This is useful for controlling layout and spacing via CSS.
+        -->
+        <div class="container">
+
+            <!-- 
+                The header section introduces the page with a title.
+                It's clear and attention-grabbing, helping users understand what the page is about.
+            -->
+            <div class="header">
+                <h1>Products</h1>
             </div>
-               <div class="product">
-               <div class="image">
-                <img src="images/screen protector.jpg" alt="Screen Protector">
-               </div> 
-               <div class="namePrice">
-                <h3>Screen Protector</h3>
-                <span>£10.99</span>
-               </div>
-               <p>Explore a huge range of screen protectors for the latest smartphones and tablets.</p>
-                <div class="buy">
-                     <button>Buy Now</button>
+
+            <!-- 
+                This is the section that holds all individual product cards.
+                Each product is displayed in a consistent layout for easy comparison and scanning.
+            -->
+            <div class="products">
+
+                <!-- 
+                    START of Product 1: AirPods
+                    Each product is wrapped in a div to create a card layout.
+                -->
+                <div class="product">
+                    <div class="image">
+                        <!-- 
+                            Product image is essential for visual appeal.
+                            It helps users recognize the item quickly.
+                        -->
+                        <img src="images/airpods.jpeg" alt="Airpods">
+                    </div>
+                    <div class="namePrice">
+                        <!-- Product name -->
+                        <h3>AirPods</h3>
+                        <!-- Product price -->
+                        <span>£49.99</span>
+                    </div>
+                    <!-- 
+                        Product description provides more context and selling points.
+                        It can influence user decisions and drive sales.
+                    -->
+                    <p>
+                        AirPods models deliver an unparalleled wireless experience, 
+                        from magical setup to high-quality sound.
+                    </p>
+                    <!-- 
+                        The Buy button acts as a call-to-action (CTA).
+                        It's designed to prompt the user to make a purchase.
+                    -->
+                    <div class="buy">
+                        <button>Buy Now</button>
+                    </div>
                 </div>
-             </div>  
-             <div class="product">
-               <div class="image">
-                <img src="images/cases.jpg" alt="Phone Cases">
-               </div> 
-               <div class="namePrice">
-                <h3>Phone Cases</h3>
-                <span>£14.99</span>
-               </div>
-               <p>Find cases for your Phone against water, dust and shock. Shop protective covers today. Buy Online with fast.</p>
-                <div class="buy">
-                     <button>Buy Now</button>
+
+                <!-- 
+                    Product 2: Screen Protector
+                    Follows the same structure for consistency across the site.
+                -->
+                <div class="product">
+                    <div class="image">
+                        <img src="images/screen protector.jpg" alt="Screen Protector">
+                    </div>
+                    <div class="namePrice">
+                        <h3>Screen Protector</h3>
+                        <span>£10.99</span>
+                    </div>
+                    <p>
+                        Explore a huge range of screen protectors for the latest smartphones and tablets.
+                    </p>
+                    <div class="buy">
+                        <button>Buy Now</button>
+                    </div>
                 </div>
-             </div>  
-             <div class="product">
-               <div class="image">
-                <img src="images/iphone charger.jpg" alt="Phone Charger">
-               </div> 
-               <div class="namePrice">
-                <h3>Charger</h3>
-                <span>£19.99</span>
-               </div>
-               <p>Find cables, charging docks and external batteries for Phone.</p>
-                <div class="buy">
-                     <button>Buy Now</button>
+
+                <!-- 
+                    Product 3: Phone Cases
+                -->
+                <div class="product">
+                    <div class="image">
+                        <img src="images/cases.jpg" alt="Phone Cases">
+                    </div>
+                    <div class="namePrice">
+                        <h3>Phone Cases</h3>
+                        <span>£14.99</span>
+                    </div>
+                    <p>
+                        Find cases for your phone that protect against water, dust, and shock.
+                        Shop protective covers today with fast delivery.
+                    </p>
+                    <div class="buy">
+                        <button>Buy Now</button>
+                    </div>
                 </div>
-             </div>    
-          </div>
-         </div>
+
+                <!-- 
+                    Product 4: Phone Charger
+                -->
+                <div class="product">
+                    <div class="image">
+                        <img src="images/iphone charger.jpg" alt="Phone Charger">
+                    </div>
+                    <div class="namePrice">
+                        <h3>Charger</h3>
+                        <span>£19.99</span>
+                    </div>
+                    <p>
+                        Find cables, charging docks, and external batteries for your phone.
+                    </p>
+                    <div class="buy">
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+
+            </div> <!-- End of .products section -->
+
+        </div> <!-- End of .container -->
+
     </body>
 </html>
