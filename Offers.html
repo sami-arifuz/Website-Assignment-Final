@@ -1,52 +1,120 @@
 <!DOCTYPE html>
 <html>
-     <head>
-          <title>Cell Planet</title>
-          <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-          <link rel="stylesheet" type="text/css" href="css/offers.css">
-          <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <head>
+        <!-- 
+            Declares the document as an HTML5 page, which ensures modern browser support and proper interpretation of the markup.
+        -->
+        <title>Cell Planet</title>
+
+        <!-- 
+            Linking the global stylesheet for base styles across the whole website—shared fonts, colors, layout structure, etc.
+        -->
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+        <!-- 
+            Linking a specific stylesheet for the Offers page to style layout, buttons, images, and so on—this keeps the design modular and clean.
+        -->
+        <link rel="stylesheet" type="text/css" href="css/offers.css">
+
+        <!-- 
+            This sets the favicon (the tiny image shown in the browser tab), which improves branding and makes the site look more polished.
+        -->
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
     </head>
+
     <body>
-         <nav>
+        <!-- 
+            Navigation bar appears at the top of every page, allowing users to easily browse between sections of the website.
+            This improves usability and provides a consistent experience.
+        -->
+        <nav>
             <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="contact us.html">Contact Us</a></li>
-            <li><a href="about us.html">About Us</a></li>
-            <li><a href="offers.html">Offers</a></li>
-          </ul>
-         </nav>
-         <div class="container">
-          <div class="header">
-               <h1>Offers!</h1>
-          </div>
-          <div class="products">
-            <div class="product">
-              <div class="image">
-               <img src="images/iphone 14.webp" alt="iPhone 14 Pro">
-              </div> 
-              <div class="namePrice">
-               <h3>iPhone 14 Pro</h3>
-               <span>£1000</span>
-              </div>
-              <p>iPhone 14 Pro on sale now! Previous price £1200. Now only £1000. Get yours now!</p>
-               <div class="buy">
-                    <button>Buy Now</button>
-               </div>
-            </div> 
-            <div class="product">
-               <div class="image">
-                <img src="images/samsung.jpg" alt="Samsung S23 Ultra">
-               </div> 
-               <div class="namePrice">
-                <h3>Samsung S23 Ultra</h3>
-                <span>£899</span>
-               </div>
-               <p>Samsung S23 Ultra on sale now! Previous price £1099. Now only £899. Get yours now!</p>
-                <div class="buy">
-                     <button>Buy Now</button>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="offers.html">Offers</a></li> <!-- Current page -->
+            </ul>
+        </nav>
+
+        <!-- 
+            Main container for the page content.
+            Helps group all the content into a centralized area for styling and layout control.
+        -->
+        <div class="container">
+
+            <!-- 
+                Page header section. A clear, bold title lets users instantly know they’re on the Offers page.
+            -->
+            <div class="header">
+                <h1>Offers!</h1>
+            </div>
+
+            <!-- 
+                This section holds all the discounted products.
+                Each product is displayed inside a 'product' card.
+            -->
+            <div class="products">
+
+                <!-- 
+                    Individual product box showcasing a discounted iPhone.
+                    Includes image, name, price, description, and a Buy Now button.
+                -->
+                <div class="product">
+
+                    <!-- 
+                        Product image - visual presentation helps catch the user’s attention.
+                    -->
+                    <div class="image">
+                        <img src="images/iphone 14.webp" alt="iPhone 14 Pro">
+                    </div>
+
+                    <!-- 
+                        Product name and price grouped together for easy readability.
+                    -->
+                    <div class="namePrice">
+                        <h3>iPhone 14 Pro</h3>
+                        <span>£1000</span> <!-- Discounted price -->
+                    </div>
+
+                    <!-- 
+                        Short description that mentions the discount and motivates users to act fast.
+                        Good for marketing appeal.
+                    -->
+                    <p>
+                        iPhone 14 Pro on sale now! Previous price £1200. Now only £1000. Get yours now!
+                    </p>
+
+                    <!-- 
+                        Call-to-action button that encourages users to make a purchase.
+                    -->
+                    <div class="buy">
+                        <button>Buy Now</button>
+                    </div>
                 </div>
-             </div>  
+
+                <!-- 
+                    Another product card for the Samsung S23 Ultra.
+                    Follows the same structure for consistency and ease of styling.
+                -->
+                <div class="product">
+                    <div class="image">
+                        <img src="images/samsung.jpg" alt="Samsung S23 Ultra">
+                    </div>
+                    <div class="namePrice">
+                        <h3>Samsung S23 Ultra</h3>
+                        <span>£899</span> <!-- Discounted price -->
+                    </div>
+                    <p>
+                        Samsung S23 Ultra on sale now! Previous price £1099. Now only £899. Get yours now!
+                    </p>
+                    <div class="buy">
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+
+            </div> <!-- End of .products -->
+        </div> <!-- End of .container -->
     </body>
 </html>
