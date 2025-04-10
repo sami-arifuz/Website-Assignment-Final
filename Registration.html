@@ -1,65 +1,108 @@
 <!DOCTYPE html>
 <html>
-     <head>
-          <title>Cell Planet</title>
-          <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-          <link rel="stylesheet" type="text/css" href="css/registration.css">
-          <link rel="icon" href="images/logo.png" type="image/x-icon">
-    </head>
-    <body>
-         <nav>
-            <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="contact us.html">Contact Us</a></li>
-            <li><a href="about us.html">About Us</a></li>
-            <li><a href="offers.html">Offers</a></li>
-          </ul>
-         </nav>
-         <div class="body">
-         <section class="container">
-          <header>Registration Form</header>
-          <form action="#" class="form">
-            <div class="input-box">
-              <label>Full Name</label>
-              <input type="text" placeholder="Enter full name" required />
-            </div>
-            <div class="input-box">
-              <label>Email Address</label>
-              <input type="text" placeholder="Enter email address" required />
-            </div>
-            <div class="column">
-              <div class="input-box">
-                <label>Phone Number</label>
-                <input type="number" placeholder="Enter phone number" required />
-              </div>
-              <div class="input-box">
-                <label>Birth Date</label>
-                <input type="date" placeholder="Enter birth date" required />
-              </div>
-            </div>
-               <div class="gender-box">
-              <h3>Gender</h3>
-              <div class="gender-option">
-                <div class="gender">
-                  <input type="radio" id="check-male" name="gender" checked />
-                  <label for="check-male">male</label>
-                </div>
-                <div class="gender">
-                  <input type="radio" id="check-female" name="gender" />
-                  <label for="check-female">Female</label>
-                </div>
-                <div class="gender">
-                  <input type="radio" id="check-other" name="gender" />
-                  <label for="check-other">prefer not to say</label>
-                </div>
-              </div>
-            </div>  
-            <button>Submit</button>
-           </form>    
-          </div>  
+  <head>
+    <!-- Tells browser this is an HTML5 document -->
+    <title>Cell Planet</title>
+
+    <!-- Link to the main stylesheet for shared/global styles -->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+    <!-- Page-specific stylesheet for registration form styling -->
+    <link rel="stylesheet" type="text/css" href="css/registration.css">
+
+    <!-- Adds the site's logo as the tab icon (favicon) -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- Navigation menu for page-to-page browsing -->
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="registration.html">Registration</a></li> <!-- Current page -->
+        <li><a href="contact us.html">Contact Us</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li><a href="offers.html">Offers</a></li>
+      </ul>
+    </nav>
+
+    <!-- Body class here likely gives the page background or layout styling -->
+    <div class="body">
+
+      <!-- Main section containing the registration form -->
+      <section class="container">
+        
+        <!-- Page header/title for user clarity -->
+        <header>Registration Form</header>
+
+        <!-- The actual form starts here -->
+        <form action="#" class="form">
           
-    </body>
+          <!-- 
+            Full Name field
+            Basic text input with a label and a placeholder for guidance
+          -->
+          <div class="input-box">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter full name" required />
+          </div>
+
+          <!-- 
+            Email field
+            Important for user contact, includes validation using 'required'
+          -->
+          <div class="input-box">
+            <label>Email Address</label>
+            <input type="text" placeholder="Enter email address" required />
+          </div>
+
+          <!-- 
+            Two inputs in one row using a "column" container for layout
+          -->
+          <div class="column">
+            <!-- Phone Number input -->
+            <div class="input-box">
+              <label>Phone Number</label>
+              <input type="number" placeholder="Enter phone number" required />
+            </div>
+
+            <!-- Date of Birth input -->
+            <div class="input-box">
+              <label>Birth Date</label>
+              <input type="date" placeholder="Enter birth date" required />
+            </div>
+          </div>
+
+          <!-- 
+            Gender selection using radio buttons 
+            Only one option can be selected at a time
+          -->
+          <div class="gender-box">
+            <h3>Gender</h3>
+
+            <!-- Grouped gender options -->
+            <div class="gender-option">
+              <div class="gender">
+                <input type="radio" id="check-male" name="gender" checked />
+                <label for="check-male">male</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-female" name="gender" />
+                <label for="check-female">Female</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-other" name="gender" />
+                <label for="check-other">prefer not to say</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit button to send the form (currently doesn't do anything because action="#" ) -->
+          <button>Submit</button>
+        </form>
+      </section> <!-- End of registration form container -->
+    </div> <!-- End of .body -->
+
+  </body>
 </html>
-          
